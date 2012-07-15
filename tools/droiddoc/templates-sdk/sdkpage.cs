@@ -12,7 +12,7 @@
 <?cs else ?>
   <?cs include:"head_tag.cs" ?>
 <?cs /if ?>
-<body class="gc-documentation" itemscope itemtype="http://schema.org/CreativeWork">
+<body class="gc-documentation">
 <a name="top"></a>
 <?cs call:custom_masthead() ?>
 
@@ -42,11 +42,10 @@
 <div class="g-unit" id="doc-content" >
   <div id="jd-header" class="guide-header" >
     <span class="crumb">&nbsp;</span>
-    <h1 itemprop="name"><?cs if:android.whichdoc == "online" ?>Download the <?cs /if ?><?cs
-var:page.title ?></h1>
+    <h1><?cs if:android.whichdoc == "online" ?>Download the <?cs /if ?><?cs var:page.title ?></h1>
   </div>
 
-  <div id="jd-content" itemprop="description">
+  <div id="jd-content">
 
 <?cs if:sdk.not_latest_version ?>
   <div class="special">

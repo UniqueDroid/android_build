@@ -21,8 +21,7 @@ LOCAL_PATH := $(call my-dir)
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10 \
-    ro.adb.qemud=1
+    ro.ril.gprsclass=10
 
 LOCAL_KERNEL := prebuilt/android-x86/kernel/kernel-vbox
 
